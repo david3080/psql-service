@@ -1,0 +1,21 @@
+[project]
+name = "psql-service"
+version = "0.1.0"
+description = "MCP server project to connect to local postgresql database."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+ "mcp>=1.1.1",
+ "psycopg2-binary>=2.9.10",
+ "python-dotenv>=1.0.1",
+]
+[[project.authors]]
+name = "david3080"
+email = "david3080@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+psql-service = "psql_service:main"
